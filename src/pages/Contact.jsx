@@ -13,26 +13,26 @@ export default function Contact() {
   return (
     <div className="contact-page animate-fade-in">
       <div className="shop-header">
-        <h1>Connect With Our Team</h1>
-        <p>Custom wedding order inquiries, catering consultations, or standard storefront questions.</p>
+        <h1>Lidhu me Ekipin Tonë</h1>
+        <p>Pyetje për porosi të personalizuara dasmash, konsulencë për katering ose pyetje të përgjithshme të dyqanit.</p>
       </div>
 
       <div className="contact-layout">
         <div className="contact-info-panel">
-          <h2>Store Coordinates</h2>
+          <h2>Të dhëna të dyqanit</h2>
           
           <div className="info-item">
             <FiMapPin />
             <div>
-              <h4>Main Pastel Bakery</h4>
-              <p>777 Sugar Plum Boulevard, Suite 100, Confection City</p>
+              <h4>Pjekuria Kryesore Pastel</h4>
+              <p>Bulevardi Sugar Plum 777, Njësi 100, Qyteti i Ëmbëlsirave</p>
             </div>
           </div>
 
           <div className="info-item">
             <FiPhone />
             <div>
-              <h4>Phone Direct</h4>
+              <h4>Telefoni</h4>
               <p>+1 (555) 834-SWEET</p>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function Contact() {
           <div className="info-item">
             <FiMail />
             <div>
-              <h4>Electronic Mail</h4>
+              <h4>Email</h4>
               <p>hello@revanie-sweets.com</p>
             </div>
           </div>
@@ -48,8 +48,8 @@ export default function Contact() {
           <div className="info-item">
             <FiClock />
             <div>
-              <h4>Kitchen Operation Hours</h4>
-              <p>Mon - Sat: 8:00 AM - 9:00 PM<br />Sunday: 10:00 AM - 6:00 PM</p>
+              <h4>Orari i punës</h4>
+              <p>Hë - Sht: 8:00 - 21:00<br />Diel: 10:00 - 18:00</p>
             </div>
           </div>
         </div>
@@ -57,24 +57,24 @@ export default function Contact() {
         <div className="contact-form-panel">
           {submitted ? (
             <div className="submission-success">
-              <h3>Message Logged Successfully!</h3>
-              <p>A gourmet specialist will answer back within 12 standard business hours.</p>
+              <h3>Mesazhi u dërgua me sukses!</h3>
+              <p>Nje specialist do të përgjigjet brenda 12 orëve të punës.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="contact-form">
               <div className="form-group">
-                <label>Your Legal Full Name</label>
+                <label>Emri juaj i plotë</label>
                 <input type="text" required placeholder="Jane Doe" />
               </div>
               <div className="form-group">
-                <label>Email Coordinates</label>
+                <label>Email</label>
                 <input type="email" required placeholder="jane@example.com" />
               </div>
               <div className="form-group">
-                <label>Message Content</label>
-                <textarea rows="5" required placeholder="Tell us about your custom cake sizing or catering requirements..."></textarea>
+                <label>Mesazhi</label>
+                <textarea rows="5" required placeholder="Na tregoni për madhësinë e tortës ose për kërkesat e kateringut..."></textarea>
               </div>
-              <button type="submit" className="btn-primary">Dispatch Message</button>
+              <button type="submit" className="btn-primary">Dërgo Mesazhin</button>
             </form>
           )}
         </div>

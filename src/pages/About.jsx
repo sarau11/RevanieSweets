@@ -6,18 +6,18 @@ export default function About() {
     <div className="about-page animate-fade-in">
       <section className="about-hero">
         <div className="about-hero-text">
-          <h1>Crafting Sweet Memories Since 2012</h1>
-          <p>Revanié Sweets started in a small home garage kitchen with a single pastry bag and a massive vision: to turn natural ingredients into vibrant edible works of art.</p>
+          <h1>Krijojmë Kujtime të Ëmbla Që nga 2012</h1>
+          <p>Revanié Sweets nisi në një kuzhinë të vogël në garazh me një qese pastiçerie dhe një vizion të madh: të kthente përbërës natyralë në vepra arti të ngrënshme.</p>
         </div>
       </section>
 
       <section className="about-content">
         <div className="story-block">
-          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=500&q=80" alt="Kitchen operations profile" />
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=500&q=80" alt="Proceset e kuzhinës" />
           <div className="story-text">
-            <h2>The Natural Sweet Philosophy</h2>
-            <p>We reject industrial corn syrup formulas and heavy hyper-processing methodologies. Our kitchens run exclusively on raw cane extractions, dairy butter fusions, and pure fruit essences.</p>
-            <p>Every recipe undergoes hours of temperature calibrations to secure the ultimate density and textural experience prior to boxing.</p>
+            <h2>Filozofia e Ëmbël Natyrale</h2>
+            <p>Ne refuzojmë formulat industriale të shurupit të misrit dhe metodat e rënda të hiper-procesimit. Kuzhinat tona funksionojnë ekskluzivisht me ekstrakte sheqeri të papërpunuar, gjalpë bulmetesh dhe esenca të pastra frutash.</p>
+            <p>Çdo recetë kalon orë të tëra kalibrimi të temperaturës për të siguruar densitetin dhe teksturën perfekte para paketimit.</p>
           </div>
         </div>
       </section>

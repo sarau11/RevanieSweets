@@ -13,17 +13,17 @@ export default function Home({ onAddToCart }) {
       {/* Hero Section */}
       <header className="hero-section">
         <div className="hero-content">
-          <span className="hero-badge">Welcome to Confection Perfection</span>
-          <h1>Making Life Sweeter Every Day!</h1>
-          <p>Explore our beautiful collections of artisan candies, melt-in-your-mouth chocolates, fluffy donuts, and decadent custom cakes.</p>
+          <span className="hero-badge">Mirësevini në Perfeksionin e Ëmbëlsirave</span>
+          <h1>Bëjmë Jetën Më Të Ëmbël Çdo Ditë!</h1>
+          <p>Zbuloni koleksionet tona të bukura me karamele artizanale, çokollata që shkrihen në gojë, krofna të pufosur dhe torta të personalizuara dekadente.</p>
           <div className="hero-actions">
-            <Link to="/products" className="btn-primary">Explore Sweets <FiArrowRight /></Link>
-            <Link to="/about" className="btn-secondary">Our Kitchen Story</Link>
+            <Link to="/products" className="btn-primary">Shfleto ëmbëlsirat <FiArrowRight /></Link>
+            <Link to="/about" className="btn-secondary">Historia e kuzhinës sonë</Link>
           </div>
         </div>
         <div className="hero-visual">
           <div className="blob-bg"></div>
-          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Assorted treats composition" />
+          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Kompozim ëmbëlsirash" />
         </div>
       </header>
 
@@ -31,26 +31,26 @@ export default function Home({ onAddToCart }) {
       <section className="features-grid">
         <div className="feature-card pink">
           <FiSmile size={32} />
-          <h3>100% Handcrafted</h3>
-          <p>Every single pastry is sculpted using gourmet family recipes in house.</p>
+          <h3>100% të Punuar Me Dorë</h3>
+          <p>Çdo ëmbëlsirë formohet me receta familjare gourmet në kuzhinën tonë.</p>
         </div>
         <div className="feature-card purple">
           <FiGift size={32} />
-          <h3>Sweet Gifting Box</h3>
-          <p>Premium customized boxes wrapped perfectly with custom message inserts.</p>
+          <h3>Kuti Dhuratash Premium</h3>
+          <p>Kutitë e personalizuara janë të mbështjellura në mënyrë perfekte me mesazhe unike.</p>
         </div>
         <div className="feature-card blue">
           <FiAward size={32} />
-          <h3>Premium Sourcing</h3>
-          <p>We source only high-tier certified organic fruit extractions and single-origin cocoa beans.</p>
+          <h3>Burime Premium</h3>
+          <p>Përdorim vetëm ekstrakte frutash organike të certifikuara dhe fara kakao me origjinë të vetme.</p>
         </div>
       </section>
 
       {/* Featured Products Showcase */}
       <section className="featured-section">
         <div className="section-header">
-          <h2>Trending Confections</h2>
-          <p>Our top voted community classics this month.</p>
+          <h2>Ëmbëlsirat më të Njohura</h2>
+          <p>Klasiket më të votuara nga komuniteti këtë muaj.</p>
         </div>
         <div className="products-grid">
           {featured.map(product => (
@@ -58,15 +58,15 @@ export default function Home({ onAddToCart }) {
           ))}
         </div>
         <div className="view-all-wrapper">
-          <Link to="/products" className="btn-secondary">View Complete Menu</Link>
+          <Link to="/products" className="btn-secondary">Shiko Menynë e Plotë</Link>
         </div>
       </section>
 
       {/* Testimonials */}
       <section className="testimonials-section">
         <div className="section-header">
-          <h2>Happiness from Our Club</h2>
-          <p>Real stories from our lovely regulars.</p>
+          <h2>Lumturia nga Klubi Ynë</h2>
+          <p>Historitë e vërteta nga klientët tanë të dashur.</p>
         </div>
         <div className="testimonials-grid">
           {testimonialsData.map(t => (

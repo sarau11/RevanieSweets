@@ -2,7 +2,7 @@ import React from 'react';
 import { FiX, FiPlus, FiMinus, FiTrash2, FiShoppingBag } from 'react-icons/fi';
 import '../styles/components.css';
 
-export default function CartSidebar({ isOpen, onClose, cart, updateQuantity, removeFromCart, onCheckout }) {
+export default function CartSidebar({ isOpen, onClose, cart, updateQuantity, removeFromCart }) {
   const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
 
   if (!isOpen) return null;
@@ -19,7 +19,7 @@ export default function CartSidebar({ isOpen, onClose, cart, updateQuantity, rem
           {cart.length === 0 ? (
             <div className="empty-cart">
               <FiShoppingBag size={48} className="empty-icon" />
-              <p>Your bag is empty! Fill it up with treats.</p>
+              <p>Qanta juaj eshte bosh! Mbush ate me </p>
             </div>
           ) : (
             cart.map(item => (
@@ -45,10 +45,9 @@ export default function CartSidebar({ isOpen, onClose, cart, updateQuantity, rem
         {cart.length > 0 && (
           <div className="cart-footer">
             <div className="summary-row">
-              <span>Subtotal:</span>
+              <span>Nëntotali:</span>
               <span className="total-amount">${subtotal.toFixed(2)}</span>
             </div>
-            <button onClick={onCheckout} className="checkout-btn">Proceed to Checkout</button>
           </div>
         )}
       </div>

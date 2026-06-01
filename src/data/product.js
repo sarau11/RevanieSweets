@@ -1,83 +1,83 @@
 export const productsData = [
   {
     id: 1,
-    name: "Strawberry Dream Donut",
+    name: "Donut ëndërrues Luleshtrydhe",
     category: "donuts",
     price: 3.99,
     rating: 4.9,
     image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=500&q=80",
     isBestSeller: true,
-    description: "Fluffy artisan donut dipped in fresh strawberry glaze and topped with natural rainbow sprinkles."
+    description: "Donut artizanal i butë i zhytur në glazurë të freskët luleshtrydhe dhe i zbukuruar me shije ylberi natyrale."
   },
   {
     id: 2,
-    name: "Pastel Macaron Box (6pc)",
+    name: "Kutia Pastel Macaron (6 copë)",
     category: "cookies",
     price: 14.50,
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=500&q=80",
     isBestSeller: true,
-    description: "Classic French macarons with delicate shells and rich ganache fills including lavender, raspberry, and vanilla."
+    description: "Makaronë klasike franceze me guaskë të hollë dhe mbushje të pasura ganash, duke përfshirë lavandë, frutë pylli dhe vanilje."
   },
   {
     id: 3,
-    name: "Unicorn Confetti Cupcake",
+    name: "Kupkake me Konfetë Njëriqind",
     category: "cupcakes",
     price: 4.25,
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=500&q=80",
     isBestSeller: false,
-    description: "Vanilla bean cake infused with rainbow confetti sprinkles, crowned with fluffy pastel buttercream swirl."
+    description: "Kek vanilje me konfetë ylberi, i kurorëzuar me rrotullim të butë kremi pastel."
   },
   {
     id: 4,
-    name: "Artisan Dark Sea Salt Bar",
+    name: "Plakë Çokollate Artizanale me Kripë Deti",
     category: "chocolates",
     price: 6.99,
     rating: 4.9,
     image: "https://images.unsplash.com/photo-1548907040-4d42b52145ca?auto=format&fit=crop&w=500&q=80",
     isBestSeller: true,
-    description: "72% single-origin dark chocolate bar sprinkled with hand-harvested Fleur de Sel."
+    description: "Plakë çokollate 72% nga origjinë e vetme e spërkatur me Fleur de Sel të korrur me dorë."
   },
   {
     id: 5,
-    name: "Gummy Rainbow Ribbon Rolls",
+    name: "Rrëshqitje Goma me Ylber",
     category: "candies",
     price: 5.49,
     rating: 4.6,
     image: "https://images.unsplash.com/photo-1581798459219-318e76aecc7b?auto=format&fit=crop&w=500&q=80",
     isBestSeller: false,
-    description: "Sweet and sour chewy ribbons bursting with wild cherry, blue raspberry, and green apple profiles."
+    description: "Rrëshqitje të ëmbla dhe të tharta që shpërthejnë me shije qershie të egra, frutë pylli blu dhe mollë jeshile."
   },
   {
     id: 6,
-    name: "Pink Velvet Celebration Cake",
+    name: "Tortë Festive Rozë Velvet",
     category: "cakes",
     price: 38.00,
     rating: 5.0,
     image: "https://images.unsplash.com/photo-1535141192574-5d4897c13636?auto=format&fit=crop&w=500&q=80",
     isBestSeller: true,
-    description: "Four layers of tender pink velvet sponge cake frosted with smooth Madagascar vanilla cream cheese."
+    description: "Katër shtresa embëlsire roze velvet të butë të zbukuruara me krem djathi vaniljeje nga Madagaskari."
   },
   {
     id: 7,
-    name: "Iced Pastel Matcha Latte",
+    name: "Latte Matcha Pastel e Ftohtë",
     category: "drinks",
     price: 5.99,
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=500&q=80",
     isBestSeller: false,
-    description: "Premium ceremonial grade green tea matcha layered beautifully with oat milk and a hint of vanilla."
+    description: "Matcha çaji jeshil premium i klasës ceremoniale i kombinuar bukur me qumësht të tërshërës dhe një nuancë vaniljeje."
   },
   {
     id: 8,
-    name: "Gourmet Salted Caramel Fudge",
+    name: "Fudge Karamele të Kriposur",
     category: "chocolates",
     price: 8.50,
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=500&q=80",
     isBestSeller: false,
-    description: "Rich, buttery melt-in-your-mouth fudge blocks infused with house-made copper kettle caramel."
+    description: "Blloqe fudge të pasura dhe të shkrifëta në gojë, të përzien me karamele të bërë në kazan bakri."
   }
 ];
 
@@ -85,22 +85,22 @@ export const testimonialsData = [
   {
     id: 1,
     name: "Sarah Jenkins",
-    role: "Birthday Party Planner",
-    comment: "Revanié Sweets catered our daughter's party, and the Unicorn Cupcakes were the highlight! Unbelievably fresh and stunning colors.",
+    role: "Organizuese Festa",
+    comment: "Revanié Sweets furnizoi festën e vajzës tonë dhe kupkaket ishin pika kulmore! Shumë të freskëta dhe me ngjyra magjepsëse.",
     stars: 5
   },
   {
     id: 2,
     name: "Marcus Thorne",
-    role: "Chocolate Enthusiast",
-    comment: "The dark sea salt bars are elite tier. You can taste the high-quality single-origin cocoa bean roasting. My absolute weekly ritual.",
+    role: "Entuziaste e Çokollatës",
+    comment: "Tabakat e kripës së detit janë nivel elitar. Lehtë ndjehet kualiteti i lartë i farës së kakaos. Rituali im absolut javor.",
     stars: 5
   },
   {
     id: 3,
     name: "Elena Rostova",
-    role: "Local Foodie",
-    comment: "The store itself feels like walking directly into a sweet cloud. Quick delivery when ordered online too! Highly recommended.",
+    role: "Gastronome Lokale",
+    comment: "Dyqani ndjehet si një shëtitje në një re të ëmbël. Dorëzimi i shpejtë kur u porosit online! Shumë e rekomanduar.",
     stars: 5
   }
 ];

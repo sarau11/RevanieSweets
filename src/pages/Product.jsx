@@ -5,7 +5,16 @@ import ProductCard from '../components/ProductCard';
 import Loader from '../components/Loader';
 import '../styles/pages.css';
 
-const categories = ['all', 'candies', 'chocolates', 'donuts', 'cakes', 'cupcakes', 'cookies', 'drinks'];
+const categories = [
+  { value: 'all', label: 'Të gjitha' },
+  { value: 'candies', label: 'Karamele' },
+  { value: 'chocolates', label: 'Çokollata' },
+  { value: 'donuts', label: 'Krofna' },
+  { value: 'cakes', label: 'Torta' },
+  { value: 'cupcakes', label: 'Kupkaket' },
+  { value: 'cookies', label: 'Biskota' },
+  { value: 'drinks', label: 'Pije' }
+];
 
 export default function Products({ onAddToCart }) {
   const [loading, setLoading] = useState(true);
@@ -14,7 +23,6 @@ export default function Products({ onAddToCart }) {
   const [filteredProducts, setFilteredProducts] = useState(productsData);
 
   useEffect(() => {
-    // Artificial mock load timeout to trigger the visual spinner asset
     const timer = setTimeout(() => setLoading(false), 600);
     return () => clearTimeout(timer);
   }, []);
@@ -35,16 +43,16 @@ export default function Products({ onAddToCart }) {
   return (
     <div className="products-page animate-fade-in">
       <div className="shop-header">
-        <h1>The Sweet Universe</h1>
-        <p>Filter by custom collections or search for your favorite flavor profiles directly.</p>
+        <h1>Universi i Ëmbël</h1>
+        <p>Filtro sipas koleksioneve ose kërko shijen tënde të preferuar.</p>
       </div>
 
       <div className="controls-container">
         <div className="search-box-wrapper">
           <FiSearch className="search-icon" />
-          <input 
-            type="text" 
-            placeholder="Search cupcakes, artisan chocolate, sour gummies..." 
+          <input
+            type="text"
+            placeholder="Kërko kupkake, çokollatë artizanale, xhelqibash të tharta..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
@@ -53,11 +61,11 @@ export default function Products({ onAddToCart }) {
         <div className="categories-scroller">
           {categories.map(cat => (
             <button
-              key={cat}
-              className={`category-chip ${selectedCategory === cat ? 'active' : ''}`}
-              onClick={() => setSelectedCategory(cat)}
+              key={cat.value}
+              className={`category-chip ${selectedCategory === cat.value ? 'active' : ''}`}
+              onClick={() => setSelectedCategory(cat.value)}
             >
-              {cat}
+              {cat.label}
             </button>
           ))}
         </div>
@@ -65,8 +73,8 @@ export default function Products({ onAddToCart }) {
 
       {filteredProducts.length === 0 ? (
         <div className="no-results">
-          <h3>No sweet combinations found...</h3>
-          <p>Try resetting your filter parameters or adjust spelling configurations.</p>
+          <h3>Nuk u gjet asnjë kombinim i ëmbël...</h3>
+          <p>Provoni të rivendosni filtrat ose rregulloni drejtshkrimin.</p>
         </div>
       ) : (
         <div className="products-grid">

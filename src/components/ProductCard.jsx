@@ -1,16 +1,25 @@
 import React from 'react';
-import { FiStar, FiPlus } from 'react-icons/fi';
+import { FiStar } from 'react-icons/fi';
 import '../styles/components.css';
 
-export default function ProductCard({ product, onAddToCart }) {
+export default function ProductCard({ product }) {
   const { name, price, rating, image, isBestSeller, category } = product;
+  const categoryLabels = {
+    candies: 'Karamele',
+    chocolates: 'Çokollata',
+    donuts: 'Krofna',
+    cakes: 'Torta',
+    cupcakes: 'Kupkaket',
+    cookies: 'Biskota',
+    drinks: 'Pije'
+  };
 
   return (
     <div className="product-card animate-fade-in">
       <div className="card-img-wrapper">
         <img src={image} alt={name} loading="lazy" />
-        {isBestSeller && <span className="badge-bestseller">Best Seller</span>}
-        <span className="card-category">{category}</span>
+        {isBestSeller && <span className="badge-bestseller">Më i Shitur</span>}
+        <span className="card-category">{categoryLabels[category] || category}</span>
       </div>
       <div className="card-content">
         <div className="card-header">
@@ -22,13 +31,6 @@ export default function ProductCard({ product, onAddToCart }) {
         </div>
         <div className="card-footer">
           <span className="card-price">${price.toFixed(2)}</span>
-          <button 
-            onClick={() => onAddToCart(product)} 
-            className="add-to-cart-btn"
-            title="Add to Cart"
-          >
-            <FiPlus /> Add
-          </button>
         </div>
       </div>
     </div>

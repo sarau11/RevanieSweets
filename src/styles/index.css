@@ -5,15 +5,15 @@
   --text-main: #2d2d2d;
   --text-muted: #666666;
   
-  /* Candy Pastel Accents */
-  --sweet-pink: #ffb7b2;
-  --sweet-purple: #e8dbfc;
-  --sweet-blue: #b5ead7;
-  --sweet-yellow: #ffdac1;
-  --accent-primary: #ff6b8b; /* Vibrantly sweet pink for CTAs */
-  --accent-secondary: #845ef7;
+  /* Logo-inspired Pastel Accents */
+  --sweet-pink: #ecc5e9;
+  --sweet-purple: #f5e3f7;
+  --sweet-blue: #d7c5f0;
+  --sweet-yellow: #ffe6f4;
+  --accent-primary: #95286f; /* Deep magenta matching the logo */
+  --accent-secondary: #6b2a5b; /* Rich secondary purple */
   
-  --border-color: #f1ebd9;
+  --border-color: #f3e4f1;
   --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.08);

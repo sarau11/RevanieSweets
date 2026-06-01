@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Footer from './components/Footer';
 import CartSidebar from './components/CartSidebar';
@@ -7,13 +7,11 @@ import Home from './pages/Home';
 import Products from './pages/Product';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Checkout from './pages/Checkout';
 
 export default function App() {
   const [theme, setTheme] = useState('light');
   const [cart, setCart] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const navigate = useNavigate();
 
   // Dark/Light Mode Theme persistence pipeline
   useEffect(() => {
@@ -50,13 +48,6 @@ export default function App() {
     setCart(prev => prev.filter(item => item.id !== id));
   };
 
-  const handleClearCart = () => setCart([]);
-
-  const handleCheckoutNavigation = () => {
-    setIsCartOpen(false);
-    navigate('/checkout');
-  };
-
   const totalCartUnitsCount = cart.reduce((total, current) => total + current.quantity, 0);
 
   return (
@@ -74,7 +65,6 @@ export default function App() {
           <Route path="/products" element={<Products onAddToCart={handleAddToCart} />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/checkout" element={<Checkout cart={cart} clearCart={handleClearCart} />} />
         </Routes>
       </main>
 
@@ -84,7 +74,6 @@ export default function App() {
         cart={cart}
         updateQuantity={handleUpdateQuantity}
         removeFromCart={handleRemoveFromCart}
-        onCheckout={handleCheckoutNavigation}
       />
 
       <Footer />
