@@ -21,14 +21,7 @@ export default function Navbar({ cartCount, toggleCart, theme, toggleTheme }) {
         </div>
 
         <div className="nav-actions">
-          <button onClick={toggleTheme} className="theme-toggle" aria-label="Ndrysho temën">
-            {theme === 'light' ? <FiMoon size={20} /> : <FiSun size={20} />}
-          </button>
-          
-          <button onClick={toggleCart} className="cart-trigger" aria-label="Hap shportën">
-            <FiShoppingBag size={22} />
-            {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
-          </button>
+
 
           <button onClick={() => setIsOpen(!isOpen)} className="mobile-toggle" aria-label="Ndrysho menunë">
             {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}

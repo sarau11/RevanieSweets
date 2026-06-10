@@ -7,13 +7,11 @@ import '../styles/pages.css';
 
 const categories = [
   { value: 'all', label: 'Të gjitha' },
-  { value: 'candies', label: 'Karamele' },
-  { value: 'chocolates', label: 'Çokollata' },
-  { value: 'donuts', label: 'Krofna' },
-  { value: 'cakes', label: 'Torta' },
-  { value: 'cupcakes', label: 'Kupkaket' },
+  { value: 'cheesecakes', label: 'Cheesecakes' },
+  { value: 'cakes', label: 'Torte' },
+  { value: 'cupcakes', label: 'Cupcakes' },
   { value: 'cookies', label: 'Biskota' },
-  { value: 'drinks', label: 'Pije' }
+  { value: 'sales', label: 'Ofertat' }
 ];
 
 export default function Products({ onAddToCart }) {
@@ -52,7 +50,7 @@ export default function Products({ onAddToCart }) {
           <FiSearch className="search-icon" />
           <input
             type="text"
-            placeholder="Kërko kupkake, çokollatë artizanale, xhelqibash të tharta..."
+            placeholder="Kërko ëmbëlsira..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />

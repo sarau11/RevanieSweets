@@ -24,8 +24,8 @@ export default function Contact() {
           <div className="info-item">
             <FiMapPin />
             <div>
-              <h4>Pjekuria Kryesore Pastel</h4>
-              <p>Bulevardi Sugar Plum 777, Njësi 100, Qyteti i Ëmbëlsirave</p>
+              <h4>Pika kryesore</h4>
+              <p>Rr.Martiret e Kombit (Rruga e Kovaqve), Mitrovice</p>
             </div>
           </div>
 
@@ -33,7 +33,7 @@ export default function Contact() {
             <FiPhone />
             <div>
               <h4>Telefoni</h4>
-              <p>+1 (555) 834-SWEET</p>
+              <p>043 511 506</p>
             </div>
           </div>
 
@@ -41,7 +41,7 @@ export default function Contact() {
             <FiMail />
             <div>
               <h4>Email</h4>
-              <p>hello@revanie-sweets.com</p>
+              <p>revaniesweets@gmail.com</p>
             </div>
           </div>
 

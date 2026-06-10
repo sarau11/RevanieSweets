@@ -13,14 +13,7 @@ export default function App() {
   const [cart, setCart] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
-  // Dark/Light Mode Theme persistence pipeline
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme(prev => prev === 'light' ? 'dark' : 'light');
-  };
 
   // State Handler Actions for E-Commerce Cart Logic
   const handleAddToCart = (product) => {
@@ -55,8 +48,7 @@ export default function App() {
       <Navbar 
         cartCount={totalCartUnitsCount} 
         toggleCart={() => setIsCartOpen(!isCartOpen)} 
-        theme={theme}
-        toggleTheme={toggleTheme}
+      
       />
       
       <main style={{ minHeight: '70vh' }}>

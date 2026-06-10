@@ -5,13 +5,11 @@ import '../styles/components.css';
 export default function ProductCard({ product }) {
   const { name, price, rating, image, isBestSeller, category } = product;
   const categoryLabels = {
-    candies: 'Karamele',
-    chocolates: 'Çokollata',
-    donuts: 'Krofna',
-    cakes: 'Torta',
-    cupcakes: 'Kupkaket',
+    cheesecakes: 'Cheesecakes',
+    cakes: 'Torte',
+    cupcakes: 'Cupcakes',
     cookies: 'Biskota',
-    drinks: 'Pije'
+    sales: 'Ofertat'
   };
 
   return (
