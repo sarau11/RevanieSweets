@@ -27,7 +27,6 @@ export default function Home({ onAddToCart }) {
         </div>
       </header>
 
-      {/* Core Value Proportions */}
       <section className="features-grid">
         <div className="feature-card pink">
           <FiSmile size={32} />
