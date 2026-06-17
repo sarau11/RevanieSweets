@@ -7,7 +7,7 @@ export default function About() {
       <section className="about-hero">
         <div className="about-hero-text">
           <h1>Krijojmë Kujtime të Ëmbla Që nga 2012</h1>
-          <p>Revanié Sweets nisi në një kuzhinë të vogël në garazh me një qese pastiçerie dhe një vizion të madh: të kthente përbërës natyralë në vepra arti të ngrënshme.</p>
+          <p>Reanvié është vendi ku gatuhen dhe shërbehen revaniet më të shishjshme dhe më unike. Ky gatim bëhet nga një staf profesional i drejtuar nga kuzhinieri i njohur Isa Banjska. ❤️</p>
         </div>
       </section>
 

@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Products from './pages/Product';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Admin from './pages/Admin';
 
 export default function App() {
   const [theme, setTheme] = useState('light');
@@ -57,6 +58,7 @@ export default function App() {
           <Route path="/products" element={<Products onAddToCart={handleAddToCart} />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </main>
 

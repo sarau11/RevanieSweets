@@ -27,7 +27,7 @@ export default function CartSidebar({ isOpen, onClose, cart, updateQuantity, rem
                 <img src={item.image} alt={item.name} />
                 <div className="item-details">
                   <h4>{item.name}</h4>
-                  <p className="item-price">${(item.price * item.quantity).toFixed(2)}</p>
+                  <p className="item-price">€{(item.price * item.quantity).toFixed(2)}</p>
                   <div className="item-controls">
                     <div className="qty-selectors">
                       <button onClick={() => updateQuantity(item.id, item.quantity - 1)}><FiMinus /></button>
@@ -46,7 +46,7 @@ export default function CartSidebar({ isOpen, onClose, cart, updateQuantity, rem
           <div className="cart-footer">
             <div className="summary-row">
               <span>Nëntotali:</span>
-              <span className="total-amount">${subtotal.toFixed(2)}</span>
+              <span className="total-amount">€{subtotal.toFixed(2)}</span>
             </div>
           </div>
         )}

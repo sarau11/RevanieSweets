@@ -6,7 +6,15 @@ import ProductCard from '../components/ProductCard';
 import '../styles/pages.css';
 
 export default function Home({ onAddToCart }) {
-  const featured = productsData.filter(p => p.isBestSeller).slice(0, 4);
+  const products = (() => {
+    try {
+      const saved = localStorage.getItem('productsData');
+      return saved ? JSON.parse(saved) : productsData;
+    } catch (e) {
+      return productsData;
+    }
+  })();
+  const featured = products.filter(p => p.isBestSeller).slice(0, 4);
 
   return (
     <div className="home-page animate-fade-in">

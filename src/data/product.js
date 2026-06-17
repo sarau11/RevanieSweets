@@ -51,21 +51,21 @@ export const productsData = [
   },
   {
     id: 6,
-    name: "Tortë Festive Rozë Velvet",
+    name: "Red Velvet",
     category: "cakes",
     price: 38.00,
     rating: 5.0,
-    image: "https://images.unsplash.com/photo-1535141192574-5d4897c13636?auto=format&fit=crop&w=500&q=80",
+    image: "https://scontent.fprn12-1.fna.fbcdn.net/v/t39.30808-6/675147939_942878135173542_4576204699194054017_n.jpg?stp=dst-jpg_tt6&cstp=mx1360x1700&ctp=s1360x1700&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fJeUbaRIhyEQ7kNvwE57UEh&_nc_oc=AdqstEFCDibWkg5dv1xI0zfXRx7KsDyJljEcXjHMTzdPhTS7FigoImBJuo2UxFCMCqE&_nc_zt=23&_nc_ht=scontent.fprn12-1.fna&_nc_gid=YbJqKf4XbRY5skeie6M8Rg&_nc_ss=7b289&oh=00_Af_ecg1n150k_p46-8zb6pS5wlHIbVH-hvH8KE-bykeLJA&oe=6A35C27B",
     isBestSeller: true,
-    description: "Katër shtresa embëlsire roze velvet të butë të zbukuruara me krem djathi vaniljeje nga Madagaskari."
+    description: "E pasur në shije, e veçantë në pamje dhe perfekte për çdo tryezë❤️🍓."
   },
   {
     id: 7,
-    name: "Latte Matcha Pastel e Ftohtë",
-    category: "drinks",
+    name: "Cheesecake Fruta Mali",
+    category: "cheesecakes",
     price: 5.99,
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=500&q=80",
+    image: "https://scontent.fprn12-1.fna.fbcdn.net/v/t39.30808-6/661989771_932169662911056_6902497171765614283_n.jpg?stp=dst-jpg_tt6&cstp=mx1360x1700&ctp=s1360x1700&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FUDo6f3OJpMQ7kNvwHF8S79&_nc_oc=AdqiJRxj02Bp2TigJkDoiOuqs1xRz0SGVhigLlDE0iLCEcPnHzwu-LYCMb4mbABW4Xg&_nc_zt=23&_nc_ht=scontent.fprn12-1.fna&_nc_gid=YG0QkFrzGG3CRxXaLFRAmg&_nc_ss=7b289&oh=00_Af8Z3LZMf848b7FyIfohkP9ByVXCIc01VBzo6kN0gtixHw&oe=6A35C9F7",
     isBestSeller: false,
     description: "Matcha çaji jeshil premium i klasës ceremoniale i kombinuar bukur me qumësht të tërshërës dhe një nuancë vaniljeje."
   },

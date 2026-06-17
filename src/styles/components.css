@@ -313,6 +313,14 @@
   color: var(--text-main);
 }
 
+.card-description {
+  margin: 0 0 1rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  min-height: 3rem;
+}
+
 .card-rating {
   display: flex;
   align-items: center;

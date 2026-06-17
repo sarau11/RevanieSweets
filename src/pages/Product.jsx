@@ -5,20 +5,20 @@ import ProductCard from '../components/ProductCard';
 import Loader from '../components/Loader';
 import '../styles/pages.css';
 
-const categories = [
-  { value: 'all', label: 'Të gjitha' },
-  { value: 'cheesecakes', label: 'Cheesecakes' },
-  { value: 'cakes', label: 'Torte' },
-  { value: 'cupcakes', label: 'Cupcakes' },
-  { value: 'cookies', label: 'Biskota' },
-  { value: 'sales', label: 'Ofertat' }
-];
 
 export default function Products({ onAddToCart }) {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [filteredProducts, setFilteredProducts] = useState(productsData);
+  const [products, setProducts] = useState(() => {
+    try {
+      const saved = localStorage.getItem('productsData');
+      return saved ? JSON.parse(saved) : productsData;
+    } catch (e) {
+      return productsData;
+    }
+  });
+  const [filteredProducts, setFilteredProducts] = useState(products);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 600);
@@ -26,7 +26,7 @@ export default function Products({ onAddToCart }) {
   }, []);
 
   useEffect(() => {
-    let result = productsData;
+    let result = products;
     if (selectedCategory !== 'all') {
       result = result.filter(p => p.category === selectedCategory);
     }
@@ -34,7 +34,19 @@ export default function Products({ onAddToCart }) {
       result = result.filter(p => p.name.toLowerCase().includes(search.toLowerCase()));
     }
     setFilteredProducts(result);
-  }, [search, selectedCategory]);
+  }, [search, selectedCategory, products]);
+
+  // update products if admin modified localStorage elsewhere
+  useEffect(() => {
+    const onStorage = () => {
+      try {
+        const saved = localStorage.getItem('productsData');
+        if (saved) setProducts(JSON.parse(saved));
+      } catch (e) {}
+    };
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, []);
 
   if (loading) return <Loader />;
 
@@ -57,7 +69,10 @@ export default function Products({ onAddToCart }) {
         </div>
 
         <div className="categories-scroller">
-          {categories.map(cat => (
+          {[
+            { value: 'all', label: 'Të gjitha' },
+            ...Array.from(new Set(products.map(p => p.category).filter(Boolean))).map(c => ({ value: c, label: c.charAt(0).toUpperCase() + c.slice(1) }))
+          ].map(cat => (
             <button
               key={cat.value}
               className={`category-chip ${selectedCategory === cat.value ? 'active' : ''}`}

@@ -3,7 +3,7 @@ import { FiStar } from 'react-icons/fi';
 import '../styles/components.css';
 
 export default function ProductCard({ product }) {
-  const { name, price, rating, image, isBestSeller, category } = product;
+  const { name, price, image, isBestSeller, category, description } = product;
   const categoryLabels = {
     cheesecakes: 'Cheesecakes',
     cakes: 'Torte',
@@ -22,13 +22,10 @@ export default function ProductCard({ product }) {
       <div className="card-content">
         <div className="card-header">
           <h3>{name}</h3>
-          <div className="card-rating">
-            <FiStar className="star-icon" />
-            <span>{rating.toFixed(1)}</span>
-          </div>
         </div>
+        {description && <p className="card-description">{description}</p>}
         <div className="card-footer">
-          <span className="card-price">${price.toFixed(2)}</span>
+          <span className="card-price">€{price.toFixed(2)}</span>
         </div>
       </div>
     </div>
