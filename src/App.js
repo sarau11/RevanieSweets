@@ -14,9 +14,6 @@ export default function App() {
   const [cart, setCart] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
-
-
-  // State Handler Actions for E-Commerce Cart Logic
   const handleAddToCart = (product) => {
     setCart(prevCart => {
       const existing = prevCart.find(item => item.id === product.id);
