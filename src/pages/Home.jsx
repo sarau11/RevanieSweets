@@ -69,6 +69,26 @@ export default function Home({ onAddToCart }) {
           <Link to="/products" className="btn-secondary">Shiko Menynë e Plotë</Link>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <section className="testimonials-section">
+        <div className="section-header">
+          <h2>Çfarë thonë klientët</h2>
+          <p>Përvoja e klientëve tanë me shijet tona.</p>
+        </div>
+        <div className="testimonials-grid">
+          {testimonialsData.map(t => (
+            <div key={t.id} className="testimonial-card">
+              <p className="testimonial-comment">"{t.comment}"</p>
+              <div className="testimonial-meta">
+                <strong>{t.name}</strong>
+                <span className="testimonial-role"> — {t.role}</span>
+              </div>
+              <div className="testimonial-stars">{'★'.repeat(t.stars)}</div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

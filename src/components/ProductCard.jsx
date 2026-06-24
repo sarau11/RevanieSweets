@@ -1,6 +1,4 @@
 import React from 'react';
-// import { FiStar } from 'react-icons/fi';
-
 import '../styles/components.css';
 
 export default function ProductCard({ product }) {

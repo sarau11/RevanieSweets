@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Footer from './components/Footer';
@@ -43,10 +43,11 @@ export default function App() {
 
   return (
     <>
-      <Navbar 
-        cartCount={totalCartUnitsCount} 
-        toggleCart={() => setIsCartOpen(!isCartOpen)} 
-      
+      <Navbar
+        cartCount={totalCartUnitsCount}
+        toggleCart={() => setIsCartOpen(!isCartOpen)}
+        theme={theme}
+        toggleTheme={() => setTheme(prev => (prev === 'dark' ? 'light' : 'dark'))}
       />
       
       <main style={{ minHeight: '70vh' }}>
