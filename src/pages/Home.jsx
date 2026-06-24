@@ -13,7 +13,7 @@ export default function Home({ onAddToCart }) {
     } catch (e) {
       return productsData;
     }
-  })();
+  })(); 
   const featured = products.filter(p => p.isBestSeller).slice(0, 4);
 
   return (
