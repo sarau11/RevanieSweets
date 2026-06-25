@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { productsData } from '../data/product';
 
 export default function Admin() {
-  // Admin accessible directly at `/admin` route. Remove query-key requirement.
+
 
   const [products, setProducts] = useState(() => {
     try {

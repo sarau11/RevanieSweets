@@ -81,26 +81,3 @@ export const productsData = [
   }
 ];
 
-export const testimonialsData = [
-  {
-    id: 1,
-    name: "Sarah Jenkins",
-    role: "Organizuese Festa",
-    comment: "Revanié Sweets furnizoi festën e vajzës tonë dhe kupkaket ishin pika kulmore! Shumë të freskëta dhe me ngjyra magjepsëse.",
-    stars: 5
-  },
-  {
-    id: 2,
-    name: "Marcus Thorne",
-    role: "Entuziaste e Çokollatës",
-    comment: "Tabakat e kripës së detit janë nivel elitar. Lehtë ndjehet kualiteti i lartë i farës së kakaos. Rituali im absolut javor.",
-    stars: 5
-  },
-  {
-    id: 3,
-    name: "Elena Rostova",
-    role: "Gastronome Lokale",
-    comment: "Dyqani ndjehet si një shëtitje në një re të ëmbël. Dorëzimi i shpejtë kur u porosit online! Shumë e rekomanduar.",
-    stars: 5
-  }
-];
