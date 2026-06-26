@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiArrowRight, FiSmile, FiGift, FiAward } from 'react-icons/fi';
-import { productsData } from '../data/product';
+import { productsData, testimonialsData } from '../data/product';
 import ProductCard from '../components/ProductCard';
 import '../styles/pages.css';
 
@@ -18,6 +18,7 @@ export default function Home({ onAddToCart }) {
 
   return (
     <div className="home-page animate-fade-in">
+      {/* Hero Section */}
       <header className="hero-section">
         <div className="hero-content">
           <span className="hero-badge">Mirësevini në Perfeksionin e Ëmbëlsirave</span>
@@ -53,7 +54,7 @@ export default function Home({ onAddToCart }) {
         </div>
       </section>
 
-
+      {/* Featured Products Showcase */}
       <section className="featured-section">
         <div className="section-header">
           <h2>Ëmbëlsirat më të Njohura</h2>
@@ -69,6 +70,25 @@ export default function Home({ onAddToCart }) {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="testimonials-section">
+        <div className="section-header">
+          <h2>Çfarë thonë klientët</h2>
+          <p>Përvoja e klientëve tanë me shijet tona.</p>
+        </div>
+        <div className="testimonials-grid">
+          {testimonialsData.map(t => (
+            <div key={t.id} className="testimonial-card">
+              <p className="testimonial-comment">"{t.comment}"</p>
+              <div className="testimonial-meta">
+                <strong>{t.name}</strong>
+                <span className="testimonial-role"> — {t.role}</span>
+              </div>
+              <div className="testimonial-stars">{'★'.repeat(t.stars)}</div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
